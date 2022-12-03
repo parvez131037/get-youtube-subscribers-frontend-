@@ -12,7 +12,7 @@ const [subscribers, setSubscribers] = useState([]);
 //Fetching subscriber data from the backend API only
 //using UseEffect method
 useEffect(() => {
-	axios.get(`/subscribers/`).then((res) => {
+	axios.get("https://get-youtube-subscribers.onrender.com/api/subscribers").then((res) => {
 	setSubscribers(res.data);
   console.log(res.data);
 	});
